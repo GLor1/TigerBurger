@@ -1,0 +1,106 @@
+.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color: orangered;
+    color: black;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+.image {
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+.class1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: black;
+    word-spacing: 10px;
+}
+
+.class1 a {
+    color: white;
+}
+
+.class1 a:hover {
+    transition: .5s ease-in-out;
+    color: aqua;
+    /* preferred green*/
+}
+
+.about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 280px;
+    margin-left: 20%
+}
+
+.about h2 {
+    text-align: center;
+
+}
+
+.about p {
+    margin-left: 20%;
+}
+
+.about:hover {
+    padding: 30px;
+    transition: .3s ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+.complaints {
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid black 3px;
+    background-color: goldenrod;
+    margin-left: 20%;
+    width: 280px;
+}
+
+.complaints:hover {
+    transition: ease-in-out .3s;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.someclass p:hover {
+    transition: .3s ease-in-out;
+    background-color: blue;
+    color: yellow;
+    font-size: 30px;
+}
+
+.someclass2:hover {
+    transition: ease-in-out .3s;
+    background-color: red;
+    font-size: 130px;
+    padding: 30px;
+}
+
+@keyframes imgmove{
+    0% {left:0px;}
+    25%{left:50px;}
+    50%{left:0px;}
+    75%{left:-50px;}
+    100%{left: 0px, padding: 10px;}
+}
+
+.image{
+    position: relative;
+    animation-duration: 3s;
+}
+.image:hover{
+    transition: .5s ease-in-out;
+    background-color: orangered;
+    padding: 50px;
+    animation-name: imgmove;
+}
